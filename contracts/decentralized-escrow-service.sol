@@ -10,8 +10,6 @@ contract EscrowService {
         bool isReleased\
         bool isRefunded;
         string description;
-    }
-
     mapping(uint256 => EscrowAgreement) private agreements;
     uint256 public nextEscrowId   
 
