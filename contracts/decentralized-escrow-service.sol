@@ -5,7 +5,7 @@ contract EscrowService {
     struct EscrowAgreement {
         address buyer;
         address seller;
-        address arbiter;
+        address arbite
         uint256 amount;
         bool isReleased\
         bool isRefunded;
