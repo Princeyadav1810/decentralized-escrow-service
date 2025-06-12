@@ -13,8 +13,7 @@ contract EscrowService {
     mapping(uint256 => EscrowAgreement) private agreements;
     uint256 public nextEscrowId   
 
-    mapping(address => uint256[]) private userEscrows;
-
+    mapping(address => uint256[]) private userEscrows
     event EscrowCreated(uint256 escrowId, address buyer, address seller, address arbiter, uint256 amount, string description);
     event FundsReleased(uint256 escrowId, address releasedBy);
     event FundsRefunded(uint256 escrowId, address refundedBy);
