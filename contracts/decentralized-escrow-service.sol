@@ -27,19 +27,11 @@ contract EscrowService {
 
         uint256 escrowId = nextEscrowId;
 
-        agreements[escrowId] = EscrowAgreement({
+        
             buyer: msg.sender,
             seller: _seller,
             arbiter: _arbiter,
-            amount: msg.value,
-            isReleased: false,
-            isRefunded: false,
-            description: _description
-        });
-
-        userEscrows[msg.sender].push(escrowId);
-        userEscrows[_seller].push(escrowId);
-        userEscrows[_arbiter].push(escrowId);
+         
 
         nextEscrowId++;
 
