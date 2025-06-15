@@ -1,17 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.17;
 
-contract EscrowService {
-    struct EscrowAgreement {
-        address buyer;
-        address seller;
-        address arbite
-        uint256 amount;
-        bool isReleased\
-        bool isRefunded;
-        string description;
-    mapping(uint256 => EscrowAgreement) private agreements;
-    uint256 public nextEscrowId   
+contract\
 
     mapping(address => uint256[]) private userEscrows
     event EscrowCreated(uint256 escrowId, address buyer, address seller, address arbiter, uint256 amount, string description);
