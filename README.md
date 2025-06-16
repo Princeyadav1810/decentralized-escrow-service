@@ -4,7 +4,7 @@
 The Decentralized Escrow Service is a blockchain-based platform that facilitates secure transactions between buyers and sellers without relying on traditional intermediaries. By leveraging smart contracts on the Core blockchain, this service provides a trustless environment where funds are held securely until predefined conditions are met. The platform incorporates an arbitration mechanism to resolve potential disputes, ensuring fair trade practices while maintaining the benefits of decentralization.
 
 ## Project Vision 🚀
-Our vision is to revolutionize online transactions by eliminating trust barriers that typically exist between unknown parties conducting business. By providing a secure, transparent, and efficient escrow system, we aim to empower global commerce and enable seamless transactions across borders without the high fees and time delays associated with traditional escrow services. The platform is designed to be accessible to everyone, from individual consumers to businesses
+Our vision is to revolutionize online transactions by eliminating trust barriers that typically exist between unknown parties conducting business. By providing a secure, transparent, and efficient escrow system, we aim to empower global commerce and enable seamless transactions across borders out the high fees and time delays associated with traditional escrow services. The platform is designed to be accessible to everyone, from individual consumers to businesses
 ## Key Features ✨
 1. **Trustless Escrow Mechanism** 🔐: Funds are locked in smart contracts until predefined conditions are met.
 2. **Third-party Arbitration** ⚖️: Designated arbiters can resolve disputes between buyers and sellers.
