@@ -73,6 +73,17 @@ contract\
         emit EscrowCancelled(_escrowId, msg.sender);
     }
 
+ }
+
+    function cancelEscrowBeforeFunding(uint256 _escrowId) external {
+        EscrowAgreement storage agreement = agreements[_escrowId];
+        require(agreement.buyer == msg.sender, "Only buyer can cancel");
+        require(agreement.amount == 0, "Already funded");
+
+        delete agreements[_escrowId];
+        emit EscrowCancelled(_escrowId, msg.sender);
+    }
+
     function getEscrowDetails(uint256 _escrowId) external view returns (
         address buyer,
         address seller,
