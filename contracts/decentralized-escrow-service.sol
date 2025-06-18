@@ -7,7 +7,7 @@ contract\
     event EscrowCreated(uint256 escrowId, address buyer, address seller, address arbiter, uint256 amount, string description);
     event FundsReleased(uint256 escrowId, address releasedBy);
     event FundsRefunded(uint256 escrowId, address refundedBy);
-    event EscrowCancelled(uint256 escrowId, address cancelledBy);
+    event EscrowCancelled(uint256 escrowId, address cancelledBy
     event EscrowFunded(uint256 escrowId, uint256 amount);
     event ArbiterUpdated(uint256 escrowId, address oldArbiter, address newArbiter); // 🔹 New
 
