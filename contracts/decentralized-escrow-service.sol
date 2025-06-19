@@ -3,13 +3,7 @@ pragma solidity ^0.8.17;
 
 contract\
 
-    mapping(address => uint256[]) private userEscrows
-    event EscrowCreated(uint256 escrowId, address buyer, address seller, address arbiter, uint256 amount, string description);
-    event FundsReleased(uint256 escrowId, address releasedBy);
-    event FundsRefunded(uint256 escrowId, address refundedBy);
-    event EscrowCancelled(uint256 escrowId, address cancelledBy
-    event EscrowFunded(uint256 escrowId, uint256 amount);
-    event ArbiterUpdated(uint256 escrowId, address oldArbiter, address newArbiter); // 🔹 New
+  
 
     function createEscrow(address _seller, address _arbiter, string memory _description) external payable returns (uint256) {
         require(_seller != address(0), "Invalid seller address");
