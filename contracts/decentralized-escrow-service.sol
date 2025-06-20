@@ -1,9 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.17;
-
-contract\
-
-  
+pragma solidity ^0.8.17
 
     function createEscrow(address _seller, address _arbiter, string memory _description) external payable returns (uint256) {
         require(_seller != address(0), "Invalid seller address");
