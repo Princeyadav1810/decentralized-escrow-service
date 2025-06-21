@@ -24,9 +24,6 @@ pragma solidity ^0.8.17
         require(agreement.buyer == msg.sender, "Only buyer can fund");
         require(!agreement.isReleased && !agreement.isRefunded, "Escrow finalized");
 
-        agreement.amount += msg.value;
-        emit EscrowFunded(_escrowId, msg.value);
-    }
 
     function releaseFunds(uint256 _escrowId) external {
         EscrowAgreement storage agreement = agreements[_escrowId];
